@@ -1,20 +1,15 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, Text, View } from "react-native";
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+import { React } from "react";
+import { faMugSaucer } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>YES !!!!!!!!!!!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView>
+      <View>
+        <Text>Yes</Text>
+        <FontAwesomeIcon icon={faMugSaucer} />
+      </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
